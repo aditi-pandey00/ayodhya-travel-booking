@@ -1,0 +1,222 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block sachin %}
+<!---------------------- carousel start---------------->
+<div class="row">
+    <div class="co-sm-12 bg-light" style="min-height:200px;">
+
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="{% static 'images/ay1.jpg' %}" class="d-block w-100" alt="..">
+                    <div class="carousel-caption d-none d-md-block">
+                      
+
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="{% static 'images/ay2.jpg' %}" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                     
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'images/ay3.jpg' %}" class="d-block w-100" alt="..">
+                    <div class="carousel-caption d-none d-md-block">
+                        
+
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </div>
+
+</div>
+
+
+<!----------------------- carousel end --------------------------->
+<div class="row">
+    <div class="col-sm-12" style="min-height:10px;background:#ffffff;"></div>
+</div>
+<!----------------------------category---(cities)--------------------->
+
+
+
+<!----------------------end------category--(end)---------------------->
+
+<!-----------------------------sachin-------------------------->
+<div class="row">
+    <div class="col-sm-12 " style="min-height:200px;background:#ffffff;">
+        <!------------------start-------->
+        </br>
+        <div class=" h3 text-center " style="font-weight:bold;"> Top Places </div>
+        </br>
+        <div class="row">
+            {% if place %}
+            {% for x in place %}
+            <div class="col-sm-3">
+                <div class="card w-100  ">
+                    <img src="/{{x.placepic}}" class="img-thumbnail" class="card-img-top" alt="..." style="height:300px;">
+                    <div class="car-body">
+                        <h4 class="card-title ps-3 ">{{x.ptitle}}</h4>
+                    
+                        
+                    </div>
+                </div>
+            </div>
+
+            {% endfor %}
+            {% endif %}
+
+        </div>
+
+        <!-------------end------->
+    </div>
+</div>
+
+
+<!----------------------------guider--------------------->
+
+<!---------------> <!-----------------guider-------------- end------------------------------->
+
+
+
+<!-------------------end------------>
+
+
+
+
+<!--------------------------(1)-----end blogs--------------------------->
+
+<!-----------(2)--------blog----------->
+
+<!-----------intresting fact---------->
+<div class="row py-3">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10  " style="min-height:200px;background:#ffffff;">
+        <div class="h2 pt-2 px-5 text-center text-warning">Some Interesting FAQ's about AYODHYA</div>
+        <br/>
+        <p class="px-5" style="color:gray;"><b> How can I commute within Ayodhya?</b> <br/>
+Multiple modes of transportation are available for travel within Ayodhya including taxis, buses, tempos, tongas, rickshaws. Since it is a small town, the most convenient mode of travel are the rickshaws and auto-rickshaws (tempos).
+<br/><br/>
+          <b>  What are the top sightseeing places in Ayodhya? </b><br/>
+The top sightseeing places in Ayodhya are Ram Janmabhoomi, Kanak Bhawan, Nageshwarnath Temple, Hanuman Garhi, Ayodhya, Gulab Bari, Treta Ke Thakur.
+           </p>
+    </div>
+    <div class="col-sm-1"></div>
+
+</div>
+<!-----------intresting fact---------->
+
+<!-----------bada blog----------->
+
+
+
+
+<!-- START  papular place-->
+
+<!-- end-->
+<div class="row">
+    <div class="h3 text-center"> <b class="text-success">रघुकुल रीति सदा चलि आई प्राण जाई पर बचन न जाई</b></div>
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10 offer my-5 text-primary">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="fs-1 text-dark">भगवान राम</div>
+                <p style="text-align:justify;">भगवान राम जी का जन्म अयोध्या के राजा के घर में हुआ था।
+                    उनकी माता का नाम कौशल्या और पिता का नाम दशरथ था। भगवान राम के तीन भाई थे:- भरत, शत्रुघ्न और लक्ष्मण।
+                    भगवान राम जी के गुरु का नाम वशिष्ठ था। उनका विवाह माता सीता के साथ हुआ था।
+                    भगवान राम और सीता जी की जोड़ी को आज भी एक आदर्श जोड़ी माना जाता है। भगवान राम जी के दो पुत्र थे:-
+                    लव और कुश। हनुमान, भगवान राम के, सबसे बड़े भक्त माने जाते है।</p>
+                <div class="fs-1 text-dark">वनवास</div>
+                <p style="text-align:justify;">राजा दशरथ के तीन रानियां थीं:
+                    राज्य नियमों के अनुसार राजा का ज्येष्ठ पुत्र ही राजा बनने का पात्र होता है
+                    अत: श्री राम का अयोध्या का राजा बनना निश्चित था।
+                    कैकेयी जिन्होंने दो बार राजा दशरथ की जान बचाई थी और
+                    दशरथ ने उन्हें यह वर दिया था कि वो जीवन के किसी भी
+                    पल उनसे दो वर मांग सकती हैं। राम को राजा बनते हुए और भविष्य को देखते
+                    हुए कैकेयी चाहती थी कि उनका पुत्र भरत ही अयोध्या का राजा बने,
+                    इसलिए उन्होंने राजा दशरथ द्वारा राम को १४ वर्ष का वनवास दिलाया और
+                    अपने पुत्र भरत के लिए अयोध्या का राज्य मांग लिया।
+                    वचनों में बंधे राजा दशरथ को विवश होकर यह स्वीकार करना पड़ा।
+                    श्री राम ने अपने पिता की आज्ञा का पालन किया।
+                    श्री राम की पत्नी देवी सीता और उनके भाई लक्ष्मण जी भी वनवास गये थे।
+
+
+
+            </div>
+            <div class="col-sm-4">
+                <img src="{% static 'images/ramji.jpg' %}" style="min-height:100%;" class="img-fluid text-center"/>
+            </div>
+            <div class="col-sm-4">
+                <div class="fs-1 text-dark"> श्रीराम चरित्र</div>
+                <p style="text-align:justify;">मर्यादा पुरुषोत्तम श्रीराम श्री हरि विष्णु के दस अवतारो में से सातवें अवतार थे।
+                    बारह कलाओं के स्वामी श्रीराम का जन्म लोक कल्याण और इंसानो के लिए एक आदर्श प्रस्तुत करने के लिए हुआ था।
+                    श्रीराम को हिन्दू धर्म के महानतम देवताओं की श्रेणी में गिना जाता है।
+                    वे करुणा, त्याग और समर्पण की मूर्ति माने जाते है।</p>
+
+                <div class="fs-1 text-dark">स्तुति</div>
+                <p style="text-align:justify;">श्री रामचन्द्र कृपालु भजु मन,हरण भवभय दारुणम्।
+नव कंज लोचन, कंज मुख करकंज पद कंजारुणम्॥
+श्री रामचन्द्र कृपालु भजु मन…॥
+कन्दर्प अगणित अमित छवि,नव नील नीरद सुन्दरम्।
+पट पीत मानहुं तड़ित रूचि-शुचिनौमि जनक सुतावरम्॥
+श्री रामचन्द्र कृपालु भजु मन…॥
+भजु दीनबंधु दिनेशदानव दैत्य वंश निकन्दनम्।
+रघुनन्द आनन्द कन्द कौशलचन्द्र दशरथ नन्द्नम्॥
+श्री रामचन्द्र कृपालु भजु मन…॥
+सिर मुकुट कुंडल तिलकचारू उदारु अंग विभूषणम्।
+आजानुभुज शर चाप-धर,संग्राम जित खरदूषणम्॥
+श्री रामचन्द्र कृपालु भजु मन…॥
+इति वदति तुलसीदास,शंकर शेष मुनि मन रंजनम्।
+मम ह्रदय कंज निवास कुरु,कामादि खल दल गंजनम्॥
+श्री रामचन्द्र कृपालु भजु मन…॥
+मन जाहि राचेऊ मिलहिसो वर सहज सुन्दर सांवरो।
+करुणा निधान सुजानशील सनेह जानत रावरो॥
+श्री रामचन्द्र कृपालु भजु मन…॥ एहि भांति गौरी असीससुन सिय हित हिय हरषित अली।
+तुलसी भवानिहि पूजी पुनि-पुनिमुदित मन मन्दिर चली॥
+श्री रामचन्द्र कृपालु भजु मन…॥
+</p>
+
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-1"></div>
+</div>
+
+<!-------start--------->
+
+
+<!--------end--------->
+
+
+
+
+
+<!---------end blog------------>
+
+<!------------------------------------contactus---------------------->
+
+
+{% endblock %}

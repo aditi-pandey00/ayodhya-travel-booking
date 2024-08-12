@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block sachin %}
+
+
+<div class="row">
+    <div class="col-sm-12 " style="min-height:300px;">
+        <div class="row">
+            <div class=" h3 text-center pt-3"> Image Gallery</div>
+           
+            <div class="col-sm-12 ">
+                <div class="row">
+                    {% if gallery %}
+                    {% for x in gallery %}
+                    <div class="col-sm-3 pt-3 pb-3">
+                        <div class="card  w-100">
+                            <img src="/{{x.picture}}" class="img-thumbanil" class="card-img-top" alt=".."
+                                 style="height:250px; width:300px; margin-left:10px;"/>
+
+
+                        </div>
+
+                    </div>
+                    {% endfor %}
+                    {% endif %}
+
+                </div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}

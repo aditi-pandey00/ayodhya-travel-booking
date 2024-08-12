@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% load static %}
+<style>
+     .form-control
+    {
+    margin-bottom:8px;
+    }
+    .txta
+    {
+    min-height:8px;
+    }
+</style>
+{% block sachin %}
+
+<div class="row">
+    <div class="col-sm-12 py-3" style="min-height:200px;background:#ffffff;">
+
+
+
+<div class="row contact" style="background:#ffffff;">
+    <div class="h2 text-center text-danger">Contact <b class="text-dark"> Us <i class="fa fa-phone"></i></b></div></br></br>
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10" style="min-height:400px">
+        <div class="row">
+            <div class="col-sm-5 bg-light p-4" >
+                <form method="post">
+                    {% csrf_token %}<!-- cross site reforgery-->
+                    {% if s %}
+                    <div class="alert alert-success">
+                       
+                    </div>
+                    {% endif %}
+                    Name :<input type="text" name="name" required class="form-control" placeholder="Enter Your Name.."/>
+                    Mobile :<input type="number" name="mobile" required class="form-control" placeholder="Enter Your Mobile Number.."/>
+                    Email :<input type="email" name="email" required class="form-control" placeholder="Enter Your Email.."/>
+                    Message :
+                    <textarea class="form-control" name="msg" style="min-height:80px;resize:none" placeholder="Enter Your Message.." required></textarea>
+                    <input type="submit" value="Save" class="btn btn-danger mt-3"/>
+                </form>
+            </div>
+            <div class="col-sm-7 " style="">
+        <!--map start-->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28492.60978374766!2d82.19916785!3d26.7897752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399a07937e6d2823%3A0x5fc8f683b17f222b!2sAyodhya%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1723411673629!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+
+<!--map end-->
+
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-1"></div>
+</div>
+
+    </div>
+</div>
+
+{% endblock %}

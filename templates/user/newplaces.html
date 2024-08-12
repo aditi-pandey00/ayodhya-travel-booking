@@ -1,0 +1,47 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block sachin%}
+
+<div class="row">
+    <div class="col-sm-12" style="min-height:200px;background:#ffffff;">
+
+
+<div class="text-center py-2"><h3><u><span style="color:red;">Some</span> places</u></h3></div></br>
+
+<div class="row">
+
+<div class="col-sm-12">
+ 
+    <div class="col-sm-12">
+        {% if place %}
+        {% for x in place %}
+        <div class="card mb-3 bg-light" >
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="/{{x.placepic}}" class="img-fluid rounded-start  alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h4 class="card-title">{{x.ptitle}}</h4>
+        <b>{{x.bplace}}</b>
+        <p class="card-text">{{x.pdes}}</p>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+        {% endfor %}
+        {% endif %}
+    </div>
+
+  </div>
+
+</div>
+<div class="col-sm-1"></div>
+</div>
+
+    </div>
+</div>
+
+{% endblock %}
